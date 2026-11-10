@@ -5,7 +5,7 @@ description: Prepare college design students to build and publish an Orca plugin
 
 # Prepare for the Orca plugin workshop
 
-Help a college design student arrive ready to build their own plugin. The workshop outcome is a tested plugin published to Orca's community directory. Pre-work ends with a working starter and ideas, not a finished or published plugin.
+Help a college design student arrive ready to build their own plugin, with a working starter and an idea of what they want to make. The workshop outcome is a tested plugin published to Orca's community directory. Pre-work prepares their setup and idea, not a finished or published plugin.
 
 Assume little experience with coding, terminals, Git, or development tools. Perform supported technical steps directly. Explain progress briefly in plain language; give one instruction at a time when the student must act. Let them enter credentials and complete authorization themselves. Skip completed setup and preserve existing work.
 
@@ -65,6 +65,10 @@ Explain the workshop finish line: test, document, validate, then publish a versi
 
 Explain the canvas: a panel or editor can add an experience inside Orca; a theme changes appearance. Plugins use supported APIs and permissions, not unrestricted access to the whole app. Components follow Orca's plugin component catalog; custom HTML has more styling freedom within its frame and resource restrictions. Read the linked plugin UI and API references for the chosen approach rather than assuming the app's internal React/shadcn components are plugin imports.
 
-Ask about a recurring frustration or interest. Offer a few tailored ideas, such as a critique checklist, decision journal, focus timer, or project handoff panel. For each, name the user benefit, one small interaction, and anything needing an API or external service. Don't promise automatic AI features without an integration plan.
+Tell the student: “Come to the workshop with an idea for a plugin you'd like to build. It doesn't need to be fully worked out. You can ask me questions and brainstorm with me to help you decide.”
 
-Help the student shortlist ideas around one user, one problem, and one achievable workflow. Record the favorite or shortlist and first sketch task in the handoff. No need to force a final choice or start implementation before the workshop.
+Start offering ideas proactively. Check the current [Orca plugin directory](https://www.onorca.dev/plugins), especially its most-installed plugins and popular categories. Link to a few relevant examples and explain the user needs they serve. Treat installs as evidence of adoption, not proof of quality or a guarantee that a similar idea will succeed. If live popularity data is unavailable, say so rather than inventing rankings.
+
+Ask about the student's interests or recurring frustrations, then suggest a few achievable directions inspired by those examples. Translate successful patterns into an original small idea rather than copying an existing plugin: notes might inspire a design decision journal; a toolbox might inspire one useful design utility; a theme might inspire an original visual identity. For each suggestion, explain the user benefit, one core interaction, and any API or external-service dependencies. Check feasibility before promising automation or AI features.
+
+Help them choose a preferred idea around one user, one problem, and one achievable workflow. Record it and a first sketch task in the handoff. If they remain undecided, save a shortlist and the questions to resolve, and remind them to pick an idea before the workshop. Don't start building the final plugin during pre-work.
