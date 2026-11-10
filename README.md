@@ -10,7 +10,7 @@ Open Claude Code or Codex on your computer, in an environment with permission to
 
 > Read and follow https://raw.githubusercontent.com/alterdianne/orca-plugin-workshop/main/skills/setup-orca-workshop/SKILL.md to prepare my computer for the workshop. Use your terminal tools to run the setup commands.
 
-You can also attach the downloaded `SKILL.md` file and ask your agent to follow it. No npm, npx, or skill installation command is needed to begin.
+You can also attach the downloaded `SKILL.md` file and ask your agent to follow it.
 
 You don't need to run terminal commands yourself or create a GitHub account before starting. Your agent will help you. A chat-only session without access to your computer can explain the steps but cannot complete local installation.
 

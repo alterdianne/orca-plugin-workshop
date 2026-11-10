@@ -9,8 +9,6 @@ Get the student's computer ready so they can be productive immediately at the wo
 
 Assume little technical experience. Do setup work directly, reuse existing tools, and preserve the student's work. Explain progress simply; give one instruction at a time when they must act, and let them handle passwords and authorization.
 
-Follow this Markdown file directly; npm, npx, and permanent skill installation are not prerequisites for starting setup.
-
 ## 1. Explain the workshop and check their setup
 
 Start with brief context about the workshop. For example:
