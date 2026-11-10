@@ -1,74 +1,76 @@
 ---
 name: setup-orca-workshop
-description: Prepare college design students to build and publish an Orca plugin with AI, including local tools, GitHub, optional Figma MCP, a working starter, and idea exploration.
+description: Prepare college design students for an Orca plugin workshop with local setup, GitHub, optional Figma MCP, a working starter, and a plugin idea.
 ---
 
 # Prepare for the Orca plugin workshop
 
-Help a college design student arrive ready to build their own plugin, with a working starter and an idea of what they want to make. The workshop outcome is a tested plugin published to Orca's community directory. Pre-work prepares their setup and idea, not a finished or published plugin.
+Help a college design student arrive with a working plugin starter and an idea to build. During the workshop, they will design, test, and publish their plugin to Orca's community directory.
 
-Assume little experience with coding, terminals, Git, or development tools. Perform supported technical steps directly. Explain progress briefly in plain language; give one instruction at a time when the student must act. Let them enter credentials and complete authorization themselves. Skip completed setup and preserve existing work.
+Assume little technical experience. Do the technical work directly when possible. Explain progress simply, and give one instruction at a time when the student must act. Let them handle passwords and authorization. Reuse existing setup and preserve their work. Pre-work ends before building or publishing the finished plugin.
 
-## 1. Identify the environment
+## 1. Check their setup
 
-Detect the OS and whether the host agent is Claude or Codex; respect an explicit choice. Say, “You're using <agent>. I'll help you get ready to build your own Orca plugin.” Ask only if detection is unclear. Verify local filesystem and terminal access; otherwise help the student move to a local agent.
+Detect their OS and whether they use Claude or Codex; follow an explicit preference. Say, “You're using <agent>. I'll help you get ready to build your own Orca plugin.” Ask only if unclear.
 
-Inspect existing project folders, installations, authentication, and Git remotes before creating anything. Reuse compatible setup. Use OS-appropriate paths and commands.
+Check local file and terminal access, existing projects, installed tools, and authentication. If this is a chat-only environment, help them continue in a local agent.
 
-## 2. Install Orca and the tools
+## 2. Install Orca and tools
 
-Install or verify the released desktop app from https://www.onorca.dev/download, using an instructor-specified version if supplied. Verify its `orca` CLI is available and supports plugin development. Install or configure the chosen coding agent where the student will use it, and verify authentication without starting an unnecessary paid task.
+Install or verify the [Orca desktop app](https://www.onorca.dev/download) and its `orca` CLI. Use the instructor's version if specified. Install or configure the chosen coding agent if missing, guide sign-in, and verify access where the student will use it. Don't start a paid task just to test access.
 
-Read the current [plugin authoring guide](https://github.com/stablyai/orca/blob/main/docs/reference/plugin-authoring.md) and CLI help. Install Git, GitHub CLI (`gh`), and only the additional tools required by the chosen plugin starter. This workflow uses the installed app; it does not require cloning or building Orca itself or starting its web frontend.
+Read the current [plugin authoring guide](https://github.com/stablyai/orca/blob/main/docs/reference/plugin-authoring.md) and CLI help. Install Git, GitHub CLI (`gh`), and any tools the plugin starter requires. Use the released app; no Orca source checkout or browser development server is needed.
 
 ## 3. Set up GitHub
 
-Check for a GitHub account. If needed, open https://github.com/signup and guide account creation and email verification step by step. Verify sign-in.
+If they need an account, open https://github.com/signup and guide signup and email verification. Otherwise reuse their account.
 
-Check `gh auth status`. If needed, run `gh auth login --hostname github.com --web --git-protocol https` and guide browser authorization. Verify the intended account and run `gh auth setup-git`. Don't unnecessarily log out of existing accounts. Verify the agent can access GitHub through these tools; configure another integration only if needed.
+Run `gh auth status`. If needed, guide browser login with `gh auth login --hostname github.com --web --git-protocol https`. Verify the intended account, run `gh auth setup-git`, and check the agent's repository access. Keep working authentication; add another integration only if required.
 
-## 4. Create the student's plugin project
+## 4. Create a plugin project
 
-Use their preferred location or `~/Projects/ai-design-workshop/my-plugin`, under their home folder on Windows too. Create the parent folder and explain where the project lives. Reuse an existing plugin project without overwriting it.
+Use their preferred folder or `~/Projects/ai-design-workshop/my-plugin` (under their home folder on Windows too). Create it and explain where it lives.
 
-Create an original student-owned repository, not a fork of Orca or a plugin example: forks are excluded from the community directory. Explain that publication requires a public repository. Guide repository creation with `gh`; never change an existing private repo's visibility silently. Clone the new repo locally, or connect an existing local project to it. Verify `origin` and the student's write permission without a test push. Configure missing Git author name/email locally using their chosen identity; offer their GitHub private email. Preserve any existing branch with work on it.
+Use `gh` to create an original student-owned repository. Community listing requires a public repository and excludes forks. Explain visibility before creating it; don't change an existing repository's visibility silently. Clone it locally or connect their existing project. Verify `origin` and write permission without a test push. Configure missing Git author details locally with their chosen name and email; offer their GitHub private email.
 
-Scaffold a minimal plugin with `orca plugin create`, following the installed CLI's supported syntax. Keep `orca-plugin.json` at the repository root. Use a temporary scaffold folder if the generator requires an empty destination; preserve `.git`. Pick a starter with the student:
+Scaffold a minimal starter with `orca plugin create`, using the installed CLI's supported syntax. Keep `orca-plugin.json` at the repository root and preserve `.git` and existing files. Generate elsewhere and copy the starter if an empty folder is required.
 
-- **Components:** TypeScript/TSX using Orca's own controls; good for matching the app.
-- **HTML panel:** HTML/CSS/JavaScript for more visual freedom.
-- **Theme:** configuration for a visual-identity exercise.
+Use the instructor's starter or briefly offer:
 
-Use an instructor starter when provided; otherwise show the options briefly and use a simple panel. The starter proves setup and can change after brainstorming. Install only its required dependencies. Don't build the student's final idea yet.
+- **Components:** TypeScript/TSX with Orca's controls.
+- **HTML panel:** HTML, CSS, and JavaScript for more visual freedom.
+- **Theme:** configuration for colors and visual identity.
 
-## 5. Connect Figma MCP when needed
+Default to a simple panel if they have no preference. Install its dependencies. The starter can change once they choose an idea.
 
-Ask whether they plan to design in Figma unless the workshop brief already answers. If yes, help create or sign into a Figma account and configure the chosen agent's supported Figma MCP connection using current official instructions. Perform configuration directly where possible; guide settings and authorization one step at a time otherwise.
+## 5. Connect Figma MCP if needed
 
-Verify the agent can read a student-provided or workshop reference frame. If no file is available yet, distinguish a configured connection from verified file access. If a restart is required, save a handoff first and resume verification afterward. Explain that the agent translates Figma into plugin code; MCP isn't an automatic import. Skip Figma when declined.
+Ask whether they will design in Figma unless the workshop brief already says. If yes, guide Figma signup/sign-in and the selected agent's Figma MCP setup using current official instructions. Configure it directly where possible; guide the student through authorization.
 
-## 6. Verify the starter in Orca
+Verify the agent can read their reference frame. If no file is available, report the connection as configured but file access unverified. Save a handoff before any required session restart and resume afterward. Explain that MCP gives the agent design context; the agent writes the plugin code. Skip this step if they won't use Figma.
 
-Open the plugin project as a workspace in the installed app. Follow the authoring guide to enable plugins and load the development folder, normally with `orca plugin dev watch .`. Explain requested access and let the student approve it. Keep the watcher available with accessible logs.
+## 6. Test the starter
 
-Run `orca plugin validate .`, open the starter inside Orca, test one interaction (or apply a theme and verify its appearance), and verify an innocuous saved edit reloads. Inspect through available tools or obtain specific student confirmation; label the evidence honestly. A running watcher or passing validator alone does not prove the interface works.
+Open the project as a workspace in Orca. Follow the authoring guide to enable plugins and load the development folder, normally with `orca plugin dev watch .`. Explain requested permissions and let the student approve them. Keep the watcher in an accessible persistent session; explain which terminal must stay open and that stopping the watcher may unload the plugin.
 
-Resolve setup failures from logs. After a targeted fix and recheck fails identically, report the blocker and next action rather than looping or rewriting Orca. Don't claim readiness while required steps remain blocked.
+Run `orca plugin validate .`. Open the starter and test one interaction, or apply the theme. Make a harmless edit and verify it reloads. Inspect with available tools or obtain specific student confirmation; record which. Passing validation alone isn't enough.
 
-## 7. Save the workshop handoff
+Use logs to fix setup problems. If the same error persists after a targeted fix and recheck, report the blocker and next action. Don't rewrite Orca or claim readiness while setup is blocked.
 
-Save brief `WORKSHOP-SETUP.md` notes outside the plugin repository: project path, repo URL, branch, app version, authentication and Figma status, verification results, and exact steps to reopen the project and restart development. Keep credentials out. Link to the plugin authoring guide and the [publishing checklist](references/publishing.md), copying the latter's relevant instructions into the handoff so it works without this installed skill.
+## 7. Save reopening instructions
 
-Explain the workshop finish line: test, document, validate, then publish a version for others to install. Don't push a release tag or add the discovery topic during pre-work. When the student requests publication later, follow [references/publishing.md](references/publishing.md).
+Save `WORKSHOP-SETUP.md` outside the plugin repo with the project path, repo URL, branch, Orca version, authentication/Figma status, test results, and exact reopening and watcher commands. Keep credentials out.
 
-## 8. Think about plugins you could build
+Include the authoring-guide link and a copy of the [publishing checklist](references/publishing.md) so students can use it later without this skill. Explain that publishing happens at the end of the workshop; don't release a starter or add the discovery topic during pre-work. Use that checklist when publication is requested.
 
-Explain the canvas: a panel or editor can add an experience inside Orca; a theme changes appearance. Plugins use supported APIs and permissions, not unrestricted access to the whole app. Components follow Orca's plugin component catalog; custom HTML has more styling freedom within its frame and resource restrictions. Read the linked plugin UI and API references for the chosen approach rather than assuming the app's internal React/shadcn components are plugin imports.
+## 8. Help them choose an idea
 
-Tell the student: “Come to the workshop with an idea for a plugin you'd like to build. It doesn't need to be fully worked out. Ask me questions and let me give you ideas.”
+Tell them: “Come to the workshop with an idea for a plugin you'd like to build. It doesn't need to be fully worked out. Ask me questions and let me give you ideas.”
 
-Start offering ideas proactively. Check the current [Orca plugin directory](https://www.onorca.dev/plugins), especially its most-installed plugins and popular categories. Link to a few relevant examples and explain the user needs they serve. Treat installs as evidence of adoption, not proof of quality or a guarantee that a similar idea will succeed. If live popularity data is unavailable, say so rather than inventing rankings.
+Explain the possibilities and limits: panels and editors add experiences inside Orca; themes change appearance. Plugins use supported APIs and permissions. Components use Orca's plugin catalog, not the app's internal React/shadcn imports. HTML panels offer more styling freedom within their frame and resource restrictions. Check the authoring guide's UI and API references for the proposed idea.
 
-Ask about the student's interests or recurring frustrations, then suggest a few achievable directions inspired by those examples. Translate successful patterns into an original small idea rather than copying an existing plugin: notes might inspire a design decision journal; a toolbox might inspire one useful design utility; a theme might inspire an original visual identity. For each suggestion, explain the user benefit, one core interaction, and any API or external-service dependencies. Check feasibility before promising automation or AI features.
+Proactively offer ideas inspired by popular plugins in the current [community directory](https://www.onorca.dev/plugins). Link to relevant examples and explain the needs they serve. Use install counts as an adoption signal, not a quality guarantee; don't invent rankings if data is unavailable.
 
-Help them choose a preferred idea around one user, one problem, and one achievable workflow. Record it and a first sketch task in the handoff. If they remain undecided, save a shortlist and the questions to resolve, and remind them to pick an idea before the workshop. Don't start building the final plugin during pre-work.
+Ask about their interests and frustrations, then suggest a few original, achievable ideas. Notes could inspire a decision journal; a toolbox could inspire one design utility. Explain each idea's benefit, main interaction, and any API or service requirements. Verify feasibility before promising AI or automation.
+
+Help them choose one user, one problem, and one small workflow. Add their preferred idea and first sketch task to the handoff. If undecided, save a shortlist and open questions, and remind them to choose before the workshop. Stop before implementing the final plugin.

@@ -6,7 +6,7 @@ An agent skill that helps college design students prepare to build and publish a
 
 Open Claude Code or Codex on your computer, in an environment with permission to work with local files and run setup commands. Paste this message:
 
-> Help me prepare for the Orca plugin workshop. Get the setup-orca-workshop skill from https://github.com/alterdianne/orca-plugin-workshop. Read skills/setup-orca-workshop/SKILL.md and follow it, fetching its referenced files when needed. Perform the technical setup for me and guide me one step at a time when I need to sign in or approve something. I am a design student with limited technical experience.
+> Get the skill from https://github.com/alterdianne/orca-plugin-workshop and use it to prepare my computer for the workshop.
 
 You don't need to run terminal commands yourself or create a GitHub account before starting. Your agent will help you. A chat-only session without access to your computer can explain the steps but cannot complete local installation.
 
@@ -18,6 +18,8 @@ The skill helps you:
 - Connect Figma MCP if you plan to use Figma.
 - Load and test a starter plugin in Orca.
 - Save reopening instructions and brainstorm plugin ideas.
+
+Come to the workshop with an idea for a plugin you want to build. Ask your agent questions and explore ideas together.
 
 The workshop goal is a tested plugin published to the [Orca community directory](https://www.onorca.dev/plugins). Pre-work prepares your environment; it does not publish the starter.
 
