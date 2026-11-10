@@ -19,7 +19,7 @@ Start with brief context about the workshop. For example:
 
 Detect their OS and chosen agent (Claude or Codex), then check local file/terminal access, existing projects, tools, and authentication. Ask only if the agent choice is unclear. If this is a chat-only environment, help them continue in a local agent.
 
-Verify command access with a harmless local command. Use terminal tools to run setup commands and handle routine installer prompts directly, requesting command approval when needed. If execution is blocked, explain the specific restriction and guide the student through the necessary access or manual step, then resume setup. Do not require auto mode or hand over a command list when you can execute it yourself.
+Verify terminal access and run setup commands directly. If blocked, explain what the student needs to do, then resume setup.
 
 ## 2. Install Orca and tools
 
