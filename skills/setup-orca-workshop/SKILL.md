@@ -57,9 +57,12 @@ Save `WORKSHOP-SETUP.md` outside the plugin repo with the project path, repo URL
 
 Include the authoring-guide link and a copy of the [publishing checklist](references/publishing.md) so students can use it later without this skill. Explain that publishing happens at the end of the workshop; don't release a starter or add the discovery topic during pre-work. Use that checklist when publication is requested.
 
-## 8. Help them choose an idea
+## Last step: your plugin idea
 
-Tell them: “Come to the workshop with an idea for a plugin you'd like to build. It doesn't need to be fully worked out. Ask me questions and let me give you ideas.”
+Present this as a separate closing section in the student's chat, with the heading **Last step: your plugin idea**. Don't bury it in the setup report. Lead with:
+
+> **Come to the workshop with an idea for a plugin you'd like to build.**
+> It doesn't need to be fully worked out. Ask me questions and let me give you ideas.
 
 Explain the possibilities and limits in terms of what they can build: panels and editors add experiences inside Orca; themes change appearance. Plugins use supported APIs and permissions. Check the authoring guide's UI and API references for the proposed idea.
 
