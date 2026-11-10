@@ -1,6 +1,6 @@
 ---
 name: setup-orca-workshop
-description: Prepare college design students for an Orca plugin workshop with product orientation, local setup, GitHub, verified Figma MCP, a working starter, and help choosing a plugin idea.
+description: Prepare college design students for the Orca plugin workshop, starting with context about what they will do, then local setup, GitHub, Figma MCP verification, a working starter, and help choosing a plugin idea.
 ---
 
 # Prepare for the Orca plugin workshop
