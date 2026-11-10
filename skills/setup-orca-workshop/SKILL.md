@@ -65,7 +65,7 @@ Use logs to fix problems. If an error persists after a targeted fix and recheck,
 
 Save `WORKSHOP-SETUP.md` outside the plugin repo with the project path, repo URL, branch, Orca version, authentication/Figma status, test results, and exact reopening and watcher commands. Keep credentials out.
 
-Include the authoring-guide link and a copy of the [publishing checklist](https://raw.githubusercontent.com/alterdianne/orca-plugin-workshop/main/skills/setup-orca-workshop/references/publishing.md) for use when publishing the finished plugin at the end of the workshop. Don't release the starter or add the discovery topic during setup.
+Include the authoring-guide link and a copy of the [publishing checklist](references/publishing.md) for use when publishing the finished plugin at the end of the workshop. Don't release the starter or add the discovery topic during setup.
 
 ## Optional closing activity: explore Orca and brainstorm
 
