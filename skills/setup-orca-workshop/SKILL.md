@@ -65,7 +65,7 @@ Explain the workshop finish line: test, document, validate, then publish a versi
 
 Explain the canvas: a panel or editor can add an experience inside Orca; a theme changes appearance. Plugins use supported APIs and permissions, not unrestricted access to the whole app. Components follow Orca's plugin component catalog; custom HTML has more styling freedom within its frame and resource restrictions. Read the linked plugin UI and API references for the chosen approach rather than assuming the app's internal React/shadcn components are plugin imports.
 
-Tell the student: “Come to the workshop with an idea for a plugin you'd like to build. It doesn't need to be fully worked out. You can ask me questions and brainstorm with me to help you decide.”
+Tell the student: “Come to the workshop with an idea for a plugin you'd like to build. It doesn't need to be fully worked out. Ask me questions and let me give you ideas.”
 
 Start offering ideas proactively. Check the current [Orca plugin directory](https://www.onorca.dev/plugins), especially its most-installed plugins and popular categories. Link to a few relevant examples and explain the user needs they serve. Treat installs as evidence of adoption, not proof of quality or a guarantee that a similar idea will succeed. If live popularity data is unavailable, say so rather than inventing rankings.
 
