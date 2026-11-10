@@ -9,13 +9,19 @@ Get the student's computer ready so they can be productive immediately at the wo
 
 Assume little technical experience. Do setup work directly, reuse existing tools, and preserve the student's work. Explain progress simply; give one instruction at a time when they must act, and let them handle passwords and authorization.
 
+Follow this Markdown file directly; npm, npx, and permanent skill installation are not prerequisites for starting setup.
+
 ## 1. Explain the workshop and check their setup
 
 Start with brief context about the workshop. For example:
 
 > At the hackathon, you'll use AI to build and publish a plugin for [Orca](https://www.onorca.dev/docs), an app for working with coding agents such as Claude Code and Codex. Plugins add features inside Orca, such as a notes panel, an organization tool, or a visual theme. Today we'll prepare your computer and test a starter so you can start working immediately at the workshop. At the end of this setup process, I will offer to help you explore Orca and brainstorm ideas for the plugin.
 
+> If you don't understand something or something unexpected happens, send me a screenshot and I'll guide you through it.
+
 Detect their OS and chosen agent (Claude or Codex), then check local file/terminal access, existing projects, tools, and authentication. Ask only if the agent choice is unclear. If this is a chat-only environment, help them continue in a local agent.
+
+Verify command access with a harmless local command. Use terminal tools to run setup commands and handle routine installer prompts directly, requesting command approval when needed. If execution is blocked, explain the specific restriction and guide the student through the necessary access or manual step, then resume setup. Do not require auto mode or hand over a command list when you can execute it yourself.
 
 ## 2. Install Orca and tools
 
@@ -61,7 +67,7 @@ Use logs to fix problems. If an error persists after a targeted fix and recheck,
 
 Save `WORKSHOP-SETUP.md` outside the plugin repo with the project path, repo URL, branch, Orca version, authentication/Figma status, test results, and exact reopening and watcher commands. Keep credentials out.
 
-Include the authoring-guide link and a copy of the [publishing checklist](references/publishing.md) for use when publishing the finished plugin at the end of the workshop. Don't release the starter or add the discovery topic during setup.
+Include the authoring-guide link and a copy of the [publishing checklist](https://raw.githubusercontent.com/alterdianne/orca-plugin-workshop/main/skills/setup-orca-workshop/references/publishing.md) for use when publishing the finished plugin at the end of the workshop. Don't release the starter or add the discovery topic during setup.
 
 ## Optional closing activity: explore Orca and brainstorm
 
