@@ -1,11 +1,11 @@
 ---
 name: setup-orca-workshop
-description: Prepare college design students for the Orca plugin workshop, starting with context about what they will do, then local setup, GitHub, Figma MCP verification, a working starter, and help choosing a plugin idea.
+description: Prepare college design students for the Orca plugin workshop, starting with context about what they will do, then local setup, GitHub, Figma MCP verification, and a working starter. Offer Orca exploration and plugin brainstorming after setup is complete.
 ---
 
 # Prepare for the Orca plugin workshop
 
-Help a college design student arrive with a working plugin starter, verified Figma access, and an idea or shortlist to explore. During the workshop, they will design, test, and publish their plugin to Orca's community directory.
+The primary objective is to get the student's computer ready so they can be productive immediately at the workshop: working local tools, GitHub/project access, verified Figma MCP, and a tested starter plugin. During the workshop, they will design, test, and publish their plugin to Orca's community directory. Exploring Orca and brainstorming plugin ideas are optional closing activities after required setup is complete.
 
 Assume little technical experience. Do the technical work directly when possible. Explain progress simply, and give one instruction at a time when the student must act. Let them handle passwords and authorization. Reuse existing setup and preserve their work. Pre-work ends before building or publishing the finished plugin.
 
@@ -13,7 +13,7 @@ Assume little technical experience. Do the technical work directly when possible
 
 Before setup commands or idea questions, explain what the participant will use and build. Assume they may never have used Orca. For example:
 
-> At the hackathon, you'll use AI to build a small plugin for [Orca](https://www.onorca.dev/docs), an app for working with coding agents such as Claude Code and Codex. A plugin adds something inside Orca, such as a notes panel, an organization tool, or a visual theme. Today we'll prepare your computer and test a starter example. You'll build your own plugin during the hackathon, then publish it to Orca's community directory. At the end of this setup process, I will help you explore Orca and brainstorm ideas for the plugin.
+> At the hackathon, you'll use AI to build a small plugin for [Orca](https://www.onorca.dev/docs), an app for working with coding agents such as Claude Code and Codex. A plugin adds something inside Orca, such as a notes panel, an organization tool, or a visual theme. Today we'll prepare your computer and test a starter example so you can start working immediately at the workshop. You'll build your own plugin during the hackathon, then publish it to Orca's community directory. At the end of this setup process, I will offer to help you explore Orca and brainstorm ideas for the plugin.
 
 Detect their OS and whether they use Claude or Codex; follow an explicit preference. Say, “You're using <agent>. I'll help you get ready to build your own Orca plugin.” Ask only if unclear.
 
@@ -25,7 +25,7 @@ Install or verify the [Orca desktop app](https://www.onorca.dev/download) and it
 
 Read the current [plugin authoring guide](https://github.com/stablyai/orca/blob/main/docs/reference/plugin-authoring.md) and CLI help. Install Git, GitHub CLI (`gh`), and any tools the plugin starter requires. Use the released app; no Orca source checkout or browser development server is needed.
 
-Once Orca opens, give a short walkthrough of projects, workspaces, terminals or agent chats, and where plugins appear. Use what is visible in the installed version. Let the participant explore before asking them to invent a feature for an unfamiliar product.
+Launch Orca and verify it starts successfully. Guide the participant through the actions needed to complete setup, one step at a time, including any sign-in or authorization they must perform. Keep going through the required setup and verification steps before offering a product walkthrough or asking for plugin ideas.
 
 ## 3. Set up GitHub
 
@@ -61,7 +61,7 @@ Open the project as a workspace in Orca. Follow the authoring guide to enable pl
 
 Run `orca plugin validate .`. Open the starter and test one interaction, or apply the theme. Make a harmless edit and verify it reloads. Inspect with available tools or obtain specific student confirmation; record which. Passing validation alone isn't enough.
 
-Point out the starter's panel or theme inside Orca so the participant connects the word "plugin" with an experience they have tried. Explain that the starter proves setup works; they do not need to build their final idea during preparation.
+Guide the participant through the interactions needed to test the starter. Explain that this confirms setup works. Save the broader product walkthrough and idea exploration for after all required setup checks pass.
 
 Use logs to fix setup problems. If the same error persists after a targeted fix and recheck, report the blocker and next action. Don't rewrite Orca or claim readiness while setup is blocked.
 
@@ -75,16 +75,15 @@ In the handoff and final chat, report these statuses separately:
 
 - **Computer setup:** ready only when the required local tools, GitHub/project setup, and live starter checks pass; otherwise list the unfinished step and next action.
 - **Figma access:** verified only after the frame-read check; otherwise say what is configured and what remains unverified or blocked.
-- **Plugin idea:** chosen, exploring a shortlist, or undecided, with the next creative step.
+- **Plugin idea, if discussed:** chosen, exploring a shortlist, or undecided. Idea selection is optional and does not affect technical readiness.
 
 Do not say all preparation is complete while a required setup or Figma check is unfinished. An undecided idea does not invalidate successful technical checks; report it separately so the participant knows whether they need software setup or time to explore.
 
-## Last step: your plugin idea
+## Optional closing activity: explore Orca and brainstorm
 
-Present this as a separate closing section in the student's chat, with the heading **Last step: your plugin idea**. Don't bury it in the setup report. Lead with:
+Finish the required setup, save reopening instructions, and report readiness before offering this activity. If required checks remain unfinished, prioritize resolving them and report their next actions; do not substitute a walkthrough or brainstorming for setup. Once setup is verified, offer to help the participant explore Orca and brainstorm plugin ideas. They can stop after setup or leave idea selection for the workshop without losing their ready status.
 
-> **Come to the workshop with an idea or a short list of plugins you'd like to build.**
-> It doesn't need to be fully worked out. You can try Orca first and refine your choice during the workshop. Ask me questions and let me give you ideas.
+If they want to continue, present this separately from the setup report, under **Optional: explore Orca and brainstorm**. Give a short walkthrough of projects, workspaces, terminals or agent chats, and where plugins appear. Use the [Orca docs](https://www.onorca.dev/docs) and what is visible in the installed version. Let them try the product, then explain that they can bring an idea or shortlist to the workshop and refine it there.
 
 Explain the possibilities and limits in terms of what they can build: panels and editors add experiences inside Orca; themes change appearance. Plugins use supported APIs and permissions. Check the authoring guide's UI and API references for the proposed idea.
 
