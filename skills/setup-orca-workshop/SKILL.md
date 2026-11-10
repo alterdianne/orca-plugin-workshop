@@ -75,8 +75,6 @@ Include the authoring-guide link and a copy of the [publishing checklist](refere
 
 Finish the required setup, save reopening instructions, and report readiness before offering this activity. If required checks remain unfinished, prioritize resolving them and report their next actions; do not substitute a walkthrough or brainstorming for setup. Once setup is verified, offer to help the participant explore Orca and brainstorm plugin ideas. They can stop after setup or leave idea selection for the workshop without losing their ready status.
 
-If they want to continue, present this separately from the setup report, under **Optional: explore Orca and brainstorm**. Give a short walkthrough of projects, workspaces, terminals or agent chats, and where plugins appear. Use the [Orca docs](https://www.onorca.dev/docs) and what is visible in the installed version. Let them try the product, then explain that they can bring an idea or shortlist to the workshop and refine it there.
-
 Explain the possibilities and limits in terms of what they can build: panels and editors add experiences inside Orca; themes change appearance. Plugins use supported APIs and permissions. Check the authoring guide's UI and API references for the proposed idea.
 
 Proactively offer ideas inspired by popular plugins in the current [community directory](https://www.onorca.dev/plugins). Link to relevant examples and explain the needs they serve. Use install counts as an adoption signal, not a quality guarantee; don't invent rankings if data is unavailable.
