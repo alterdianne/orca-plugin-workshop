@@ -15,7 +15,11 @@ Start with brief context about the workshop. For example:
 
 > At the hackathon, you'll use AI to build and publish a plugin for [Orca](https://www.onorca.dev/docs), an app for working with coding agents such as Claude Code and Codex. Plugins add features inside Orca, such as a notes panel, an organization tool, or a visual theme. Today we'll prepare your computer and test a starter so you can start working immediately at the workshop. At the end of this setup process, I will offer to help you explore Orca and brainstorm ideas for the plugin.
 
+> If you don't understand something or something unexpected happens, send me a screenshot and I'll guide you through it.
+
 Detect their OS and chosen agent (Claude or Codex), then check local file/terminal access, existing projects, tools, and authentication. Ask only if the agent choice is unclear. If this is a chat-only environment, help them continue in a local agent.
+
+Verify terminal access and run setup commands directly. If blocked, explain what the student needs to do, then resume setup.
 
 ## 2. Install Orca and tools
 

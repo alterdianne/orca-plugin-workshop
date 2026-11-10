@@ -8,9 +8,11 @@ At the workshop, you'll use AI to build a small plugin for Orca, an app for work
 
 Open Claude Code or Codex on your computer, in an environment with permission to work with local files and run setup commands. Paste this message:
 
-> Get the skill from https://github.com/alterdianne/orca-plugin-workshop and use it to prepare my computer for the workshop.
+> Read and follow https://raw.githubusercontent.com/alterdianne/orca-plugin-workshop/main/skills/setup-orca-workshop/SKILL.md to prepare my computer for the workshop. Use your terminal tools to run the setup commands.
 
 You don't need to run terminal commands yourself or create a GitHub account before starting. Your agent will help you. A chat-only session without access to your computer can explain the steps but cannot complete local installation.
+
+If you don't understand something or something unexpected happens, send your agent a screenshot and ask it to guide you through the next step.
 
 The skill helps you:
 
@@ -26,16 +28,6 @@ After all required setup is complete, your agent can optionally guide you throug
 Your agent reports computer setup and Figma access, plus your plugin idea if discussed. A required setup or Figma check that remains unverified is unfinished preparation, with a next action to resolve it.
 
 The workshop goal is a tested plugin published to the [Orca community directory](https://www.onorca.dev/plugins). Pre-work prepares your environment; it does not publish the starter.
-
-## Optional command-line installation
-
-If you already have Node.js 22.20 or newer and prefer to install the skill yourself:
-
-```sh
-npx skills add alterdianne/orca-plugin-workshop -g
-```
-
-Choose your agent when prompted, then ask it to use `setup-orca-workshop`.
 
 ## Files
 
