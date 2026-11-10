@@ -71,14 +71,6 @@ Save `WORKSHOP-SETUP.md` outside the plugin repo with the project path, repo URL
 
 Include the authoring-guide link and a copy of the [publishing checklist](references/publishing.md) so students can use it later without this skill. Explain that publishing happens at the end of the workshop; don't release a starter or add the discovery topic during pre-work. Use that checklist when publication is requested.
 
-In the handoff and final chat, report these statuses separately:
-
-- **Computer setup:** ready only when the required local tools, GitHub/project setup, and live starter checks pass; otherwise list the unfinished step and next action.
-- **Figma access:** verified only after the frame-read check; otherwise say what is configured and what remains unverified or blocked.
-- **Plugin idea, if discussed:** chosen, exploring a shortlist, or undecided. Idea selection is optional and does not affect technical readiness.
-
-Do not say all preparation is complete while a required setup or Figma check is unfinished. An undecided idea does not invalidate successful technical checks; report it separately so the participant knows whether they need software setup or time to explore.
-
 ## Optional closing activity: explore Orca and brainstorm
 
 Finish the required setup, save reopening instructions, and report readiness before offering this activity. If required checks remain unfinished, prioritize resolving them and report their next actions; do not substitute a walkthrough or brainstorming for setup. Once setup is verified, offer to help the participant explore Orca and brainstorm plugin ideas. They can stop after setup or leave idea selection for the workshop without losing their ready status.
