@@ -35,13 +35,7 @@ Use `gh` to create an original student-owned repository. Community listing requi
 
 Scaffold a minimal starter with `orca plugin create`, using the installed CLI's supported syntax. Keep `orca-plugin.json` at the repository root and preserve `.git` and existing files. Generate elsewhere and copy the starter if an empty folder is required.
 
-Use the instructor's starter or briefly offer:
-
-- **Components:** TypeScript/TSX with Orca's controls.
-- **HTML panel:** HTML, CSS, and JavaScript for more visual freedom.
-- **Theme:** configuration for colors and visual identity.
-
-Default to a simple panel if they have no preference. Install its dependencies. The starter can change once they choose an idea.
+Use the instructor's starter or a simple panel, and install its dependencies. This is only a setup check. Don't ask the student to choose HTML, components, or a theme yet; recommend an approach after they choose their plugin idea.
 
 ## 5. Connect Figma MCP if needed
 
@@ -67,10 +61,16 @@ Include the authoring-guide link and a copy of the [publishing checklist](refere
 
 Tell them: “Come to the workshop with an idea for a plugin you'd like to build. It doesn't need to be fully worked out. Ask me questions and let me give you ideas.”
 
-Explain the possibilities and limits: panels and editors add experiences inside Orca; themes change appearance. Plugins use supported APIs and permissions. Components use Orca's plugin catalog, not the app's internal React/shadcn imports. HTML panels offer more styling freedom within their frame and resource restrictions. Check the authoring guide's UI and API references for the proposed idea.
+Explain the possibilities and limits in terms of what they can build: panels and editors add experiences inside Orca; themes change appearance. Plugins use supported APIs and permissions. Check the authoring guide's UI and API references for the proposed idea.
 
 Proactively offer ideas inspired by popular plugins in the current [community directory](https://www.onorca.dev/plugins). Link to relevant examples and explain the needs they serve. Use install counts as an adoption signal, not a quality guarantee; don't invent rankings if data is unavailable.
 
 Ask about their interests and frustrations, then suggest a few original, achievable ideas. Notes could inspire a decision journal; a toolbox could inspire one design utility. Explain each idea's benefit, main interaction, and any API or service requirements. Verify feasibility before promising AI or automation.
 
-Help them choose one user, one problem, and one small workflow. Add their preferred idea and first sketch task to the handoff. If undecided, save a shortlist and open questions, and remind them to choose before the workshop. Stop before implementing the final plugin.
+Help them choose one user, one problem, and one small workflow. Once they choose an idea, recommend the simplest suitable approach and explain why:
+
+- **Components:** TypeScript/TSX with Orca's plugin controls, for an interface that fits the app. These are separate from its internal React/shadcn components.
+- **HTML panel:** HTML, CSS, and JavaScript for more custom visual design within the plugin frame and resource restrictions.
+- **Theme:** configuration when the idea is about colors and visual identity.
+
+Don't make the student choose technical architecture unaided. Record the idea, recommended approach, and first sketch task in the handoff. If undecided, save a shortlist and open questions, and remind them to choose an idea before the workshop; defer the technical recommendation until then. Stop before implementing the final plugin.
