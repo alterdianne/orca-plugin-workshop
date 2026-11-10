@@ -10,8 +10,6 @@ Open Claude Code or Codex on your computer, in an environment with permission to
 
 > Read and follow https://raw.githubusercontent.com/alterdianne/orca-plugin-workshop/main/skills/setup-orca-workshop/SKILL.md to prepare my computer for the workshop. Use your terminal tools to run the setup commands.
 
-You don't need to run terminal commands yourself or create a GitHub account before starting. Your agent will help you. A chat-only session without access to your computer can explain the steps but cannot complete local installation.
-
 If you don't understand something or something unexpected happens, send your agent a screenshot and ask it to guide you through the next step.
 
 The skill helps you:
