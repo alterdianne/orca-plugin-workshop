@@ -2,23 +2,13 @@
 
 An agent skill that helps college design students prepare to build and publish an Orca plugin with AI. Designed for students with little or no coding or terminal experience.
 
-## Install
+## Start with your agent
 
-Install [Node.js](https://nodejs.org/) 22.20 or newer if `npx` is not available, and have Claude Code or Codex ready to use on your computer.
+Open Claude Code or Codex on your computer, in an environment with permission to work with local files and run setup commands. Paste this message:
 
-Run in your terminal:
+> Help me prepare for the Orca plugin workshop. Get the setup-orca-workshop skill from https://github.com/alterdianne/orca-plugin-workshop. Read skills/setup-orca-workshop/SKILL.md and follow it, fetching its referenced files when needed. Perform the technical setup for me and guide me one step at a time when I need to sign in or approve something. I am a design student with limited technical experience.
 
-```sh
-npx skills add alterdianne/orca-plugin-workshop -g
-```
-
-Choose Claude Code or Codex when prompted. The `-g` option makes the skill available across projects.
-
-## Start
-
-Open your chosen agent and ask:
-
-> Use the setup-orca-workshop skill to prepare my computer for the Orca plugin workshop.
+You don't need to run terminal commands yourself or create a GitHub account before starting. Your agent will help you. A chat-only session without access to your computer can explain the steps but cannot complete local installation.
 
 The skill helps you:
 
@@ -30,6 +20,16 @@ The skill helps you:
 - Save reopening instructions and brainstorm plugin ideas.
 
 The workshop goal is a tested plugin published to the [Orca community directory](https://www.onorca.dev/plugins). Pre-work prepares your environment; it does not publish the starter.
+
+## Optional command-line installation
+
+If you already have Node.js 22.20 or newer and prefer to install the skill yourself:
+
+```sh
+npx skills add alterdianne/orca-plugin-workshop -g
+```
+
+Choose your agent when prompted, then ask it to use `setup-orca-workshop`.
 
 ## Files
 
