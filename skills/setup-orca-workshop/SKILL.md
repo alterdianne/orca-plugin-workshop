@@ -13,9 +13,7 @@ Assume little technical experience. Do the technical work directly when possible
 
 Before setup commands or idea questions, explain what the participant will use and build. Assume they may never have used Orca. For example:
 
-> At the hackathon, you'll use AI to build a small plugin for Orca, an app for working with coding agents such as Claude Code and Codex. A plugin adds something inside Orca, such as a notes panel, an organization tool, or a visual theme. Today we'll prepare your computer and test a starter example. You'll build your own plugin during the hackathon, then publish it to Orca's community directory. You can explore Orca before deciding what to make.
-
-Distinguish the workshop skill (instructions for the agent), the starter plugin (an example to test setup), and the participant's plugin (what they will build). An undecided plugin idea is a creative preparation task; never describe it as missing software or a missing plugin.
+> At the hackathon, you'll use AI to build a small plugin for [Orca](https://www.onorca.dev/docs), an app for working with coding agents such as Claude Code and Codex. A plugin adds something inside Orca, such as a notes panel, an organization tool, or a visual theme. Today we'll prepare your computer and test a starter example. You'll build your own plugin during the hackathon, then publish it to Orca's community directory. At the end of this setup process, I will help you explore Orca and brainstorm ideas for the plugin.
 
 Detect their OS and whether they use Claude or Codex; follow an explicit preference. Say, “You're using <agent>. I'll help you get ready to build your own Orca plugin.” Ask only if unclear.
 
