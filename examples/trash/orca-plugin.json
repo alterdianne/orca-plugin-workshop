@@ -1,0 +1,20 @@
+{
+  "manifestVersion": 2,
+  "execution": "sandboxed-ui",
+  "id": "trash",
+  "name": "Trash",
+  "version": "0.1.0",
+  "description": "A test plugin that does nothing. It just says trash.",
+  "engines": { "orca": ">=1.4.245" },
+  "contributes": {
+    "panels": [
+      {
+        "id": "trash",
+        "title": "Trash",
+        "icon": "delete",
+        "entry": "index.html"
+      }
+    ]
+  },
+  "capabilities": []
+}
