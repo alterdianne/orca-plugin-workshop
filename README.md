@@ -18,6 +18,7 @@ The skill helps you:
 - Create a GitHub account if needed and log in with GitHub CLI.
 - Create your own plugin repository and local project folder.
 - Verify your existing Figma MCP connection or set it up if missing, then test access to a reference frame. This is a required preparation step.
+- Optionally verify Paper MCP if you design in Paper, by testing access to an open Paper file.
 - Load and test a starter plugin in Orca.
 - Save reopening instructions and report which setup checks passed or remain unfinished.
 

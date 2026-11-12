@@ -53,6 +53,18 @@ Complete this step only after a successful frame read. Without a frame, record f
 
 If verification fails, explain the error, guide one corrective step, and recheck once. If it still fails, stop sign-in attempts, record the blocker and next action, and continue independent setup. Resume verification after the student completes that action and asks for a recheck. Preserve working connections to other accounts.
 
+## 5b. Verify Paper MCP or set it up (optional)
+
+Offer this after Figma MCP passes, for students who design in [Paper](https://paper.design). Skip it if they don't use Paper; it does not affect readiness.
+
+Paper's MCP is served by the Paper desktop app on the student's computer, so Paper must be installed and open with a file. Check Paper MCP in the selected coding agent:
+
+- **Configured:** reuse the connection.
+- **Missing:** configure it using current official Paper instructions for that agent, guiding Paper install and sign-in as needed.
+- **In either case:** verify the agent can read the open Paper file, such as listing its artboards or reading a selected frame. Configuration alone does not prove access.
+
+If verification fails, explain the error, guide one corrective step, and recheck once. If it still fails, record the blocker and next action and continue. Preserve the Figma connection.
+
 ## 6. Test the starter
 
 Open the project as an Orca workspace. Follow the authoring guide to enable plugins and load the development folder, normally with `orca plugin dev watch .`. Explain requested permissions and let the student approve them. Keep the watcher in an accessible persistent terminal; explain that it must stay open and stopping it may unload the plugin.
@@ -63,7 +75,7 @@ Use logs to fix problems. If an error persists after a targeted fix and recheck,
 
 ## 7. Save reopening instructions
 
-Save `WORKSHOP-SETUP.md` outside the plugin repo with the project path, repo URL, branch, Orca version, authentication/Figma status, test results, and exact reopening and watcher commands. Keep credentials out.
+Save `WORKSHOP-SETUP.md` outside the plugin repo with the project path, repo URL, branch, Orca version, authentication/Figma status, Paper status if checked, test results, and exact reopening and watcher commands. Keep credentials out.
 
 Include the authoring-guide link and a copy of the [publishing checklist](references/publishing.md) for use when publishing the finished plugin at the end of the workshop. Don't release the starter or add the discovery topic during setup.
 
